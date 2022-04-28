@@ -1,0 +1,15 @@
+.form_div, h1 {
+    text-align: center;
+}
+
+
+/*Angular Material Styles*/
+
+.mat-form-field {
+    width: 37%;
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,24 @@
+
+<h2>Estás en: ModifyFormComponent</h2>
+<h1>Modificar una película</h1>
+<br>
+
+<form class="form_div" *ngIf="movie != undefined">
+    <mat-form-field appearance="fill">
+        <mat-label>Título</mat-label>
+        <input matInput [(ngModel)]="movie.title" name="title" value="{{movie.title}}">
+    </mat-form-field> <br>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Género</mat-label>
+        <input matInput [(ngModel)]="movie.genre" name="genre" value="{{movie.genre}}">
+    </mat-form-field> <br>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>A&ntilde;o</mat-label>
+        <input matInput [(ngModel)]="movie.year" name="year" value="{{movie.year}}">
+    </mat-form-field> <br>
+
+    <button type = "submit" id ="addbtn" mat-raised-button color="primary" (click)="modifyMovie()">Modificar película</button>
+</form> <br><br>
+

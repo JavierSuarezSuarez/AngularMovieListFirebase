@@ -1,0 +1,15 @@
+.aux_text{
+    color: black;
+    font-weight: bold;
+    font-size: 29px;
+    margin-bottom: 3%;
+    margin-left: 39%;
+    align-items: flex-start;
+    width: 31%;
+}
+.addbtn_div{
+    width: 6%;
+    margin: auto;
+    margin-left: 49%;
+    margin-bottom: 1%;
+}

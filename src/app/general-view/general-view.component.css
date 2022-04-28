@@ -1,0 +1,23 @@
+.aux_text {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.addbtn_div{
+    width: 6%;
+    margin: auto;
+    margin-left: 49%;
+    margin-bottom: 1%;
+}
+
+
+/*Angular Material Styles*/
+:host {
+    display: flex;
+    flex-direction: column;
+}

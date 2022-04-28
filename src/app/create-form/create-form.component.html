@@ -1,0 +1,23 @@
+
+<h2>Estás en: CreateFormComponent</h2>
+<h1>Añadir una película</h1>
+<br>
+
+<form class="form_div">
+    <mat-form-field appearance="fill">
+        <mat-label>Título</mat-label>
+        <input matInput [(ngModel)]="movie.title" name="title">
+    </mat-form-field> <br>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Género</mat-label>
+        <input matInput [(ngModel)]="movie.genre" name="genre">
+    </mat-form-field> <br>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>A&ntilde;o</mat-label>
+        <input matInput [(ngModel)]="movie.year" name="year">
+    </mat-form-field> <br>
+
+    <button type = "submit" id ="addbtn" mat-raised-button color="primary" (click)="addMovie()">Añadir película</button>
+</form> <br><br>
