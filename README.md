@@ -1,27 +1,31 @@
 # MovieListFirebase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+Este proyecto consiste en una aplicación web que muestra una lista CRUD de películas. Hace uso de HTML5/CSS/TypeScript junto al framework Angular y la Base de Datos Firebase (Realtime Database).
 
-## Development server
+Los componentes son los siguientes:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+-HomeComponent: Componente principal a mostrar al usuario.
 
-## Code scaffolding
+-GeneralViewComponent: Componente que posee la lista sobre la que hacer CRUD. Se han inicializado una serie de películas de Star Wars a modo de ejemplo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-DetailViewComponent: Componente que contiene una descripción, en detalle, de una película concreta.
 
-## Build
+-CreateFormComponent: Componente que consiste en un formulario para añadir una película.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-ModifyFormComponent: Componente que consiste en un formulario para modificar una película.
 
-## Running unit tests
+-PageNotFoundComponent: Componente que se usa para mostrar un mensaje al usuario cuando el enrutamiento es inválido.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-DeleteMessageComponent: Componente que consiste en mensaje informativo al usuario cuando borra con éxito una película.
 
-## Running end-to-end tests
+Su objetivo es aprender sobre la implementación de conexiones con Base de Datos en Firebase evolucionando la aplicación similar desarrollada para que admita en este proyecto dichas operaciones con Base de Datos. La aplicación posee, además, las siguientes características de Angular:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+-Navegación-Routing: dispone de un menú de navegación entre HomeComponent, GeneralViewComponent y CreateFormComponent y de routing para los componentes CreateFormComponent, ModifyFormComponent y DeleteMessageComponent.
 
-## Further help
+-Anidamiento de componentes: GeneralViewComponent es padre de DetailViewComponent.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-Servicios: se dispone de un servicio denominado DatabaseService para realizar las operaciones CRUD con Base de Datos.
+
+URL: https://javiersuarezsuarez.github.io/AngularMovieListFirebase/
+
+¡Espero que la disfrutes!
